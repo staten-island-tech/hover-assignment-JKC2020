@@ -1,29 +1,74 @@
 @import "./_variables.scss";
 @import "./_fonts.scss";
-
 html {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
   box-sizing: border-box;
-  }
-  body {
-  text-align: center;
-  }
-  .gallery-parent {
-  //text-align: center;
-  margin: 0 auto;
-  //width: 60rem;
+}
+ 
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 204, 255, 0.397),
+    rgba(136, 247, 85, 0.253)
+  );
+  background-size: cover;
+}
+ 
+.gallery {
+  margin:0;
+  padding:0;
+  border:0;
   height: 60rem;
-  width: 40rem;
-  }
-  .gallery {
-  position: relative;
-  }
-  .pd6-photo {
-  height: 20rem;
+  width: 60rem;
+  position:relative;
+  margin:0 auto;
+  justify-content: center;
+}
+ 
+.image {
   position: absolute;
-  }
-  .panda {
-  top: 50%;
-  }
+  height: 20rem;
+  width: 12rem;
+  transition: all 0.5s;
+  outline-offset: 0.5rem;
+}
+ 
+.firework {
+  top: 5rem;
+  left: 48rem;
+}
+ 
+.sky {
+  margin:auto;
+  top: 10rem;
+  left: 24rem;
+}
+ 
+.tree {
+  top: 15rem;
+  left: 0rem;
+}
+ 
+.forest {
+  top: 35rem;
+  left: 48rem;
+}
+ 
+.road {
+  top: 40rem;
+  left: 24rem;
+}
+ 
+ 
+.Wallpapers:hover {
+  transform: scale(1.5);
+  outline: 0.05rem dotted #222;
+  z-index: 2;
+}
+ 
+.gallery:hover .Wallpapers:not(:hover){
+  transform: scale(0.5);
+  opacity: 0.3;
+}
