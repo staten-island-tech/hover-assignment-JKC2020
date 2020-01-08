@@ -11,17 +11,54 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 204, 255, 0.397)), to(rgba(136, 247, 85, 0.253)));
-  background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.397), rgba(136, 247, 85, 0.253));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 192, 231, 0.884)), to(rgba(123, 223, 77, 0.637)));
+  background-image: linear-gradient(to bottom, rgba(37, 192, 231, 0.884), rgba(123, 223, 77, 0.637));
   background-size: cover;
 }
 
-.image {
-  width: 20rem;
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.gallery:hover {
-  -webkit-transform: rotate3d(50%);
-          transform: rotate3d(50%);
+.image {
+  width: 24rem;
+  height: auto;
+  overflow: auto;
+}
+
+.road {
+  -webkit-filter: invert(20%);
+          filter: invert(20%);
+}
+
+.firework {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.sky {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.forest {
+  -webkit-filter: hue-rotate(40%);
+          filter: hue-rotate(40%);
+}
+
+.image:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  outline: 1rem solid #32b9a3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline-offset: 1rem;
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%);
 }
 /*# sourceMappingURL=style.css.map */

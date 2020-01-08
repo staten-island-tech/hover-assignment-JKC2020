@@ -10,15 +10,41 @@ html {
 body {
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 204, 255, 0.397),
-    rgba(136, 247, 85, 0.253)
+    rgba(37, 192, 231, 0.884),
+    rgba(123, 223, 77, 0.637)
   );
   background-size: cover;
 }
-.image{
-  width: 20rem;
+
+.gallery{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.gallery:hover{
-  transform: rotate3d(50%);
+.image{
+  width: 24rem;
+  height: auto;
+  overflow: auto;
+}
+
+.road{
+  filter: invert(20%);
+}
+.firework{
+  filter: opacity(50%);
+}
+
+.sky{
+  filter: grayscale(80%);
+}
+
+.forest{
+  filter: hue-rotate(40%);
+}
+.image:hover{
+  transform: scale(1.3);
+  outline: 1rem solid rgb(50, 185, 163);
+  transition: all 0.3s;
+  outline-offset: 1rem;
+  filter: saturate(100%);
 }
