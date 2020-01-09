@@ -19,16 +19,6 @@ body {
 h1 {
   font-size: 5rem;
   color: white;
-  text-align: center;
-}
-
-#anime {
-  -webkit-animation-name: slide-in;
-          animation-name: slide-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .gallery {
@@ -87,5 +77,31 @@ h1 {
           transform: rotate(360deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#anime {
+  animation: Comein 3s linear .5s 1 reverse both;
+}
+
+@-webkit-keyframes Comein {
+  from {
+    left: 0%;
+    top: 0%;
+  }
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes Comein {
+  from {
+    left: 0%;
+    top: 0%;
+  }
+  to {
+    left: 50%;
+    top: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

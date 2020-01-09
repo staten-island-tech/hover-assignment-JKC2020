@@ -19,10 +19,6 @@ body {
 h1{
   font-size: 5rem;
   color: white;
-  text-align: center;
-}
-#anime{
-
 }
 
 .gallery{
@@ -66,4 +62,13 @@ h1{
 .tree:hover {
   transform: rotate(360deg);
   transition: 0.5s;
+}
+
+#anime{
+  animation: Comein 3s linear .5s 1 reverse both;
+
+}
+@keyframes Comein{
+  from {left: 0%;top: 0%;}
+  to {left: 50%;top: 50%;}
 }
