@@ -16,6 +16,15 @@ body {
   background-size: cover;
 }
 
+h1{
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+#anime{
+
+}
+
 .gallery{
   display: flex;
   justify-content: space-evenly;
@@ -28,7 +37,7 @@ body {
 }
 
 .road{
-  filter: invert(20%);
+  filter: invert(40%);
 }
 .firework{
   filter: opacity(50%);
@@ -39,12 +48,22 @@ body {
 }
 
 .forest{
-  filter: hue-rotate(40%);
+  filter: blur(5px);
 }
+
+.tree{
+  filter: hue-rotate(100deg);
+}
+
 .image:hover{
   transform: scale(1.3);
   outline: 1rem solid rgb(50, 185, 163);
   transition: all 0.3s;
   outline-offset: 1rem;
   filter: saturate(100%);
+}
+
+.tree:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
 }

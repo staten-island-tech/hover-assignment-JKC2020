@@ -16,6 +16,21 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+#anime {
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,8 +47,8 @@ body {
 }
 
 .road {
-  -webkit-filter: invert(20%);
-          filter: invert(20%);
+  -webkit-filter: invert(40%);
+          filter: invert(40%);
 }
 
 .firework {
@@ -47,8 +62,13 @@ body {
 }
 
 .forest {
-  -webkit-filter: hue-rotate(40%);
-          filter: hue-rotate(40%);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.tree {
+  -webkit-filter: hue-rotate(100deg);
+          filter: hue-rotate(100deg);
 }
 
 .image:hover {
@@ -60,5 +80,12 @@ body {
   outline-offset: 1rem;
   -webkit-filter: saturate(100%);
           filter: saturate(100%);
+}
+
+.tree:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */
